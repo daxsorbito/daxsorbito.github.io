@@ -1,5 +1,5 @@
 {
-  "name": "react-resume-site",
+  "name": "@daxsorbito/react-resume-site",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -35,5 +35,8 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
