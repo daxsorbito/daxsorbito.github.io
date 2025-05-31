@@ -40,11 +40,17 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensure full git history for tags and version bump
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
+      # Ensure latest version bump is present before publish
+      - name: Pull latest tags and commits
+        run: |
+          git pull --tags origin main
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
