@@ -21,7 +21,7 @@ export default function App() {
       <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 shadow-lg backdrop-blur-md p-6 flex flex-col sm:flex-row justify-between items-center rounded-b-2xl mb-8 border-b border-slate-200 dark:border-slate-700">
         <div className="flex items-center gap-4">
           <img
-            src="https://media.licdn.com/dms/image/v2/C5603AQHPGyL3K8-vjw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1629783510372?e=1753920000&v=beta&t=f-1H-sUVdLiPa1DmmwpKX41ho_EvK87MrqQZ-CY_Oyw"
+            src="/avatar.jpeg"
             alt="Avatar"
             className="w-16 h-16 rounded-full border-4 border-blue-500 shadow-md"
           />
